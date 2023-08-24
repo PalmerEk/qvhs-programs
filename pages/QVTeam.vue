@@ -1,6 +1,7 @@
 <script setup>
-const QVTeam = useRoster();
+const {headCoaches, assistantCoaches, managers, players} = useRoster();
 const positions = usePositions();
+const route = useRoute();
 
 const columns = [
   {
@@ -27,37 +28,6 @@ const columns = [
   },
 ];
 
-const players = computed(() => {
-    return QVTeam.filter((player) => {
-        return !player.positions.includes("M") && !player.positions.includes("HC") && !player.positions.includes("AC") 
-    })
-})
-
-const headCoaches = computed(() => {
-    return QVTeam.filter((player) => {
-        return player.positions.includes("HC")
-    })
-    .map((player) => `${player.firstName} ${player.lastName}`)
-    .join(", ")
-})
-
-const AssistantCoaches = computed(() => {
-    return QVTeam.filter((player) => {
-        return player.positions.includes("AC")
-    })
-    .map((player) => `${player.firstName} ${player.lastName}`)
-    .join(", ")
-})
-
-const Managers = computed(() => {
-    return QVTeam.filter((player) => {
-        return player.positions.includes("M")
-    })
-    .map((player) => `${player.firstName} ${player.lastName} (${gradClass(player.gradYear)})`)
-    .join(", ")
-})
-
-
 const gradClass = (gradyear) => {
     const currentYear = new Date().getFullYear()
     const currentMonth = (new Date().getMonth()+1)
@@ -66,6 +36,11 @@ const gradClass = (gradyear) => {
     
     return graduateInYears <= 1 ? "Sr." : graduateInYears <= 2 ? "Jr." : graduateInYears <= 3 ? "So." : "Fr."
 }
+
+function rowClicked (row) {
+    navigateTo(`/Player/${row.id}`)
+}
+
 
 const positionsDescriptions = (playerPositions) => {
   return playerPositions.map((position) => {
@@ -76,7 +51,7 @@ const positionsDescriptions = (playerPositions) => {
 
 <template>
   <div>
-    <UTable :rows="players" :columns="columns">
+    <UTable :rows="players" :columns="columns" @select="rowClicked">
       <template #name-data="{ row }">
         <span class="text-primary-500 dark:text-primary-400">
             {{ row.lastName }}, {{ row.firstName }}</span>
@@ -103,10 +78,12 @@ const positionsDescriptions = (playerPositions) => {
       </template>
     </UTable>
 
-    <div class="text-primary-500 dark:text-primary-400"><span>Head Coach: </span><span>{{ headCoaches }}</span></div>
-    <div class="text-primary-500 dark:text-primary-400"><span>Assistant Coach: </span><span>{{ AssistantCoaches }}</span></div>
-    <div class="text-primary-500 dark:text-primary-400"><span>Managers: </span><span>{{ Managers }}</span></div>
+    <div class="text-primary-500 dark:text-primary-400"><span>Head Coach: </span><span>{{ headCoaches.map((c) => `${c.firstName} ${c.lastName}`).join(", ") }}</span></div>
+    <div class="text-primary-500 dark:text-primary-400"><span>Assistant Coach: </span><span>{{ assistantCoaches.map((c) => `${c.firstName} ${c.lastName}`).join(", ") }}</span></div>
+    <div class="text-primary-500 dark:text-primary-400"><span>Managers: </span><span>{{ managers.map((c) => `${c.firstName} ${c.lastName} (${gradClass(c.gradYear)})`).join(", ") }}</span></div>
   </div>
 </template>
 
 <style scoped></style>
+
+

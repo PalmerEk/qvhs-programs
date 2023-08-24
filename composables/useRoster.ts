@@ -1,15 +1,21 @@
 export const useRoster = () => {
-  const team = [
+  const headCoaches = [
     {
       firstName: "Mike",
       lastName: "Vavrek",
       positions: ["HC"],
     },
+  ];
+
+  const assistantCoaches = [
     {
       firstName: "Mike",
       lastName: "Hensler",
       positions: ["AC"],
     },
+  ];
+
+  const managers = [
     {
       firstName: "Aya Al",
       lastName: "Tekreeti",
@@ -22,8 +28,11 @@ export const useRoster = () => {
       positions: ["M"],
       gradYear: 2025,
     },
-  
+  ];
+
+  const players = [
     {
+      id: 1,
       jerseyNumber: 5,
       firstName: "Lucy",
       lastName: "Auth",
@@ -32,6 +41,7 @@ export const useRoster = () => {
       height: 64,
     },
     {
+      id: 2,
       jerseyNumber: 15,
       firstName: "Rachel",
       lastName: "Bartels",
@@ -40,6 +50,7 @@ export const useRoster = () => {
       height: 68,
     },
     {
+      id: 3,
       jerseyNumber: 19,
       firstName: "Grace",
       lastName: "Carver",
@@ -48,6 +59,7 @@ export const useRoster = () => {
       height: 68,
     },
     {
+      id: 4,
       jerseyNumber: 24,
       firstName: "Aria",
       lastName: "Casillas",
@@ -56,6 +68,7 @@ export const useRoster = () => {
       height: 70,
     },
     {
+      id: 5,
       firstName: " Grace",
       lastName: "Castaldo",
       positions: ["OH", "DS"],
@@ -63,6 +76,7 @@ export const useRoster = () => {
       height: 64,
     },
     {
+      id: 6,
       jerseyNumber: 9,
       firstName: "Katelyn",
       lastName: "Clark",
@@ -71,6 +85,7 @@ export const useRoster = () => {
       height: 71,
     },
     {
+      id: 7,
       jerseyNumber: 25,
       firstName: "Nola",
       lastName: "Ebberts",
@@ -79,6 +94,7 @@ export const useRoster = () => {
       height: 69,
     },
     {
+      id: 8,
       jerseyNumber: 3,
       firstName: "Carmen",
       lastName: "Forsythe",
@@ -87,6 +103,7 @@ export const useRoster = () => {
       height: 64,
     },
     {
+      id: 9,
       jerseyNumber: 22,
       firstName: "Gabriella",
       lastName: "Frank",
@@ -95,6 +112,7 @@ export const useRoster = () => {
       height: 68,
     },
     {
+      id: 10,
       jerseyNumber: 23,
       firstName: "Mia",
       lastName: "Gartley",
@@ -103,6 +121,7 @@ export const useRoster = () => {
       height: 68,
     },
     {
+      id: 11,
       jerseyNumber: 7,
       firstName: "Nora",
       lastName: "Hammond",
@@ -111,6 +130,7 @@ export const useRoster = () => {
       height: 66,
     },
     {
+      id: 12,
       firstName: " Jaynie",
       lastName: "Helsel",
       positions: ["S", "OPP"],
@@ -118,6 +138,7 @@ export const useRoster = () => {
       height: 65,
     },
     {
+      id: 13,
       jerseyNumber: 21,
       firstName: "isabella",
       lastName: "Jarrett",
@@ -126,6 +147,7 @@ export const useRoster = () => {
       height: 69,
     },
     {
+      id: 14,
       jerseyNumber: 10,
       firstName: "Annica",
       lastName: "Kagle",
@@ -134,6 +156,7 @@ export const useRoster = () => {
       height: 71,
     },
     {
+      id: 15,
       jerseyNumber: 20,
       firstName: "Donika",
       lastName: "Keo",
@@ -142,6 +165,7 @@ export const useRoster = () => {
       height: 61,
     },
     {
+      id: 16,
       jerseyNumber: 18,
       firstName: "Lauren",
       lastName: "Krouse",
@@ -150,6 +174,7 @@ export const useRoster = () => {
       height: 67,
     },
     {
+      id: 17,
       jerseyNumber: 8,
       firstName: "Amalia",
       lastName: "MacDonald",
@@ -158,6 +183,7 @@ export const useRoster = () => {
       height: 71,
     },
     {
+      id: 18,
       firstName: " Fiona",
       lastName: "Mikita",
       positions: ["OH", "DS"],
@@ -165,6 +191,7 @@ export const useRoster = () => {
       height: 63,
     },
     {
+      id: 19,
       jerseyNumber: 13,
       firstName: "Eden",
       lastName: "Palladini",
@@ -173,6 +200,7 @@ export const useRoster = () => {
       height: 65,
     },
     {
+      id: 20,
       jerseyNumber: 6,
       firstName: "Ella",
       lastName: "Palmer",
@@ -181,6 +209,7 @@ export const useRoster = () => {
       height: 65,
     },
     {
+      id: 21,
       jerseyNumber: 12,
       firstName: "Vanessa",
       lastName: "Pickett",
@@ -189,6 +218,7 @@ export const useRoster = () => {
       height: 68,
     },
     {
+      id: 22,
       jerseyNumber: 4,
       firstName: "Mia Rosa",
       lastName: "Pugliano",
@@ -197,6 +227,7 @@ export const useRoster = () => {
       height: 65,
     },
     {
+      id: 23,
       jerseyNumber: 16,
       firstName: "Keira",
       lastName: "Sanner",
@@ -205,6 +236,7 @@ export const useRoster = () => {
       height: 67,
     },
     {
+      id: 24,
       jerseyNumber: 1,
       firstName: "Maya",
       lastName: "Sidani",
@@ -213,6 +245,7 @@ export const useRoster = () => {
       height: 64,
     },
     {
+      id: 25,
       jerseyNumber: 2,
       firstName: "Cadence",
       lastName: "Stancil",
@@ -221,6 +254,7 @@ export const useRoster = () => {
       height: 66,
     },
     {
+      id: 26,
       jerseyNumber: 17,
       firstName: "Isabella",
       lastName: "Viola",
@@ -229,6 +263,7 @@ export const useRoster = () => {
       height: 69,
     },
     {
+      id: 27,
       jerseyNumber: 14,
       firstName: "Leah",
       lastName: "Weisser",
@@ -238,5 +273,10 @@ export const useRoster = () => {
     },
   ];
 
-  return team
+  return {
+    headCoaches,
+    assistantCoaches,
+    managers,
+    players
+  };
 }
