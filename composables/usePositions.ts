@@ -1,10 +1,5 @@
 export const usePositions = () => {
 const positions = {
-    M: {
-      key: "M",
-      name: "Manager",
-      description: "Manager"
-    },
     OH: {
       key: "OH",
       name: "Outside Hitter",
@@ -43,16 +38,6 @@ const positions = {
       name: "Serving Specialist",
       description: "A serving specialist is a player who subs in just to serve. These players typically have a very tough or very consistent serve, and they come in for a player who is less strong behind the service line, but otherwise very valuable to have on the court as an offensive or defensive threat."
     },
-    HC: {
-      key: "HC",
-      name: "Head Coach",
-      description: "Head Coach"
-    },
-    AC: {
-      key: "AC",
-      name: "Assistant Coach",
-      description: "Assistant Coach"
-    }
   }
 
 return positions

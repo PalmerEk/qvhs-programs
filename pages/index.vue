@@ -1,50 +1,71 @@
 <script setup>
-const BTN_LINKS = [
+const NAV_LINKS = [
+  // {
+  //   name: "Today's Game",
+  //   link: "/Schedule",
+  //   img: "/VBBack_1.jpeg",
+  // },
   {
-    name: "JV",
-    link: "/QVTeam",
+    name: "Schedule",
+    link: "/Schedule",
+    img: "/schedules.webp",
   },
   {
-    name: "Varsity",
-    link: "/QVTeam",
+    name: "QV Roster",
+    link: "/Team/1",
+    img: "/VBBack_2.jpeg",
   },
-  {
-    name: "Opponents",
-    link: "/VisitingTeam",
-  },
+  // {
+  //   name: "Opponents",
+  //   link: "/VisitingTeam",
+  //   img: "/VBBack_3.jpeg",
+  // },
   {
     name: "Learn More",
     link: "/LearnMore",
+    img: "/VBBack_3.jpeg",
   },
-  {
-    name: "Concessions",
-    link: "/Concessions",
-  },
-  {
-    name: "Sound Board",
-    link: "/SoundBoard",
-  },
-]
+  // {
+  //   name: "Concessions",
+  //   link: "/Concessions",
+  // },
+  // {
+  //   name: "Sound Board",
+  //   link: "/SoundBoard",
+  // },
+];
 </script>
 
 <template>
-  <div class="my-4">
-    <img src="/QVLogo.png" alt="QV Logo" class="w-1/2 mx-auto" />
-    <h1 class="text-[#fcb525] text-center text-2xl">Girls Highschool Volleyball</h1>
-    <hr />
+  <div>
+    <div class="hero" style="background-image: url(/QVLogo.png)">
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">Game Day</h1>
+          <p class="mb-5">
+            
+          </p>
+        </div>
+      </div>
+    </div>
 
-    <div class="columns-2 text-center">
-      <NuxtLink v-for="btn in BTN_LINKS" :key="btn.name" :to="btn.link"
-      class="relative inline-flex items-center justify-evenly inline-block p-4 overflow-hidden">
-      <span class="relative w-full text-white inset-0 border-2 border-[#fcb525] rounded-full"><Icon name="VolleyballIcon" size="80" fill="#fcb525" /></span>
-        <span class="absolute ">{{ btn.name }}</span>
+    <div class="join join-vertical">
+      <NuxtLink
+        v-for="navLink in NAV_LINKS"
+        :key="navLink.name"
+        :to="navLink.link"
+        class="join-item"
+      >
+        <div class="card bg-base-100 shadow-xl image-full p-4">
+          <figure><img :src="navLink.img" :alt="navLink.name" /></figure>
+          <div class="card-body">
+            <h2 class="text-6xl text-secondary">{{ navLink.name }}</h2>
+          </div>
+        </div>
       </NuxtLink>
     </div>
   </div>
 </template>
 
-<style scoped>
-.qvGold {
-  color: #fcb525
-}
-</style>
+<style scoped></style>

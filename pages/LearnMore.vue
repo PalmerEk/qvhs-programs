@@ -1,56 +1,29 @@
 <script setup>
 const positions = usePositions();
-
-const columns = [
-  {
-    key: "abbreviation",
-    label: "Pos",
-  },
-  {
-    key: "name",
-    label: "Name",
-  },
-  {
-    key: "aka",
-    label: "AKA",
-  },
-  {
-    key: "description",
-    label: "Description",
-  },
-];
 </script>
 
 <template>
-  <div>
-    <UAccordion :items="positions">
-      <template #default="{ item, index, open }">
-        <UButton
-          color="gray"
-          variant="ghost"
-          class="border-b border-gray-200 dark:border-gray-700"
-          :ui="{ rounded: 'rounded-none', padding: { sm: 'p-3' } }"
-        >
-        <UAvatar :text="item.key" size="xl"/>
-          <span class="text-xl">{{ item.name }}</span
-          >
-          <template #trailing>
-            <UIcon
-              name="i-heroicons-chevron-right-20-solid"
-              class="w-5 h-5 ms-auto transform transition-transform duration-200"
-              :class="[open && 'rotate-90']"
-            />
-          </template>
-        </UButton>
-      </template>
-
-      <template #item="{ item }">
-        <p v-if="item.aka"> (aka: {{ item.aka }})</p>
-        <p class="text-gray-900 dark:text-white text-center text-l">
-          {{ item.description }}
-        </p>
-      </template>
-    </UAccordion>
+  <div class="join join-vertical w-full">
+    <div
+      v-for="position in positions"
+      :key="position.key"
+      class="collapse collapse-arrow join-item border border-base-300"
+    >
+      <input type="radio" name="accordion-positions" />
+      <div class="collapse-title font-medium">
+        <span class="avatar pr-4 ">
+          <span class="rounded-full ring ring-secondary ring-offset-2">
+            {{ position.key }}
+          </span>
+        </span>
+        <span class="text-xl">{{ position.name }}</span>
+      </div>
+      <div class="collapse-content">
+        <p>hello</p>
+        <p>{{ position.aka }}</p>
+        <p>{{ position.description }}</p>
+      </div>
+    </div>
   </div>
 </template>
 
