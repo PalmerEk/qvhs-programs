@@ -3,6 +3,16 @@ import type { Config } from "tailwindcss";
 export default <Partial<Config>>{
   plugins: [require("daisyui")],
 
+  extend: {
+    dropShadow: {
+      '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
+      '4xl': [
+          '0 35px 35px rgba(255, 0, 0, 0.25)',
+          '0 45px 65px rgba(0, 255, 0, 0.15)'
+      ]
+    }
+  },
+
   daisyui: {
     // themes: false, // true: all themes | false: only light + dark | array: specific themes like this ["light", "dark", "cupcake"]
     themes: [

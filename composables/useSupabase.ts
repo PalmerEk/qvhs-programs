@@ -28,7 +28,7 @@ export const useSupabase = () => {
 
   const getSchedule = () => {
     return supabase.from('schedule')
-      .select(`time, visitor:visitor(name, nickname, avatar_url), home:home(name, nickname, avatar_url)`)
+      .select(`time, visitor:visitor(id, name, nickname, avatar_url), home:home(id, name, nickname, avatar_url)`)
       .or('visitor.eq.1, home.eq.1')
       .order('time', { ascending: true })
   }

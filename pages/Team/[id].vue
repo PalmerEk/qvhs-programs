@@ -28,15 +28,29 @@ const gradClass = (gradyear) => {
     : "Fr.";
 };
 
+const team = computed(() => {
+  if (!players.value) return null;
+  if(!players.value.length) return null;
+  return players.value[0].team;
+});
+
 function rowClicked(player) {
   navigateTo(`/Player/${player.id}`);
 }
 </script>
 
 <template>
-  <div class="overflow-x-auto overflow-y-auto h-screen">
+  <div class="overflow-x-auto overflow-y-auto">
     <span v-if="pending" class="loading loading-spinner text-primary"></span>
     <div v-else>
+      <h1 v-if="team" class="text-2xl text-center text-accent mb-4 h-12">
+        <div class="avatar h-12">
+          <div>
+            <img :src="team.avatar_url" :alt="team.nickname" />
+          </div>
+        </div>
+        <span class="align-middle">{{ team.name }}</span>
+      </h1>
       <table class="table table-xs table-pin-rows table-pin-cols">
         <thead>
           <tr>

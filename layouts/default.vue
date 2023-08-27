@@ -1,5 +1,13 @@
+<script setup>
+const router = useRouter();
+
+const goBack = () => {
+  if(router.currentRoute.value.path !== "/") router.back();
+};
+</script>
+
 <template>
-  <main>
+  <main class="min-w-screen min-h-screen">
     <header>
       <div class="navbar bg-base-100">
         <div class="flex-none">
@@ -12,55 +20,31 @@
             >Girls Varsity Volleyball</a
           >
         </div>
-        <div class="flex-none">
+        <!-- <div class="flex-none">
           <button class="btn btn-square btn-ghost">
             <Icon name="mdi-dots-horizontal" size="24" />
           </button>
-        </div>
+        </div> -->
       </div>
     </header>
 
-    <div>
-        <slot />
+    <div class="h-[calc(100vh-7rem)] overflow-auto">
+      <slot />
     </div>
 
     <footer>
       <div class="btm-nav btm-nav-sm">
         <button>
-          <NuxtLink to="/">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-              />
-            </svg>
-          </NuxtLink>
+          <a href="" @click.prevent="goBack()">
+            <Icon name="mdi-arrow-left" size="24" />
+          </a>
         </button>
         <button class="active">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
+          <NuxtLink to="/">
+            <Icon name="mdi-home-outline" size="24" />
+          </NuxtLink>
         </button>
-        <button>
+        <!-- <button>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-5 w-5"
@@ -75,7 +59,7 @@
               d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
             />
           </svg>
-        </button>
+        </button> -->
       </div>
     </footer>
   </main>

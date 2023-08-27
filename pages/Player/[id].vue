@@ -16,7 +16,9 @@ const { data: player, pending } = useAsyncData(
 const positionsDescriptions = computed(() => {
   return player.value.positions
     .map((position) => {
-      return positions[position].name;
+      if(positions[position]) return positions[position].name;
+      const akaPos = Object.values(positions).find((pos) => pos.aka?.split(',').includes(position));
+      if(akaPos) return akaPos.name;
     })
     .join(" / ");
 });
@@ -48,8 +50,11 @@ const gradClass = (gradyear) => {
         }})
       </h2>
       <h3>{{ positionsDescriptions }}</h3>
-      <!-- <pre>{{ player }}</pre> -->
+
+      <h3>Stats: Coming soon!</h3>
+
     </div>
+
   </div>
 </template>
 

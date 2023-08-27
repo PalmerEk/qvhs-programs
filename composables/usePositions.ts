@@ -3,13 +3,13 @@ const positions = {
     OH: {
       key: "OH",
       name: "Outside Hitter",
-      aka: "Outside, Pin, Left Side",
+      aka: "Outside,Pin,LS,Left Side",
       description: "An outside hitter hits and blocks from the left side of the court. Normally, they also carry the responsibilities of passing and playing defense when they get to the back row. The outside typically gets the most sets, especially when the setter is out of system, due to the fact that the outside set is one of the easier options to set. An outside’s responsibilities include hitting from the front and back row, passing in serve receive, playing left or middle-back defense, and blocking."
     },
     OPP: {
       key: "OPP",
       name: "Opposite Hitter",
-      aka: "Pin, Right Side",
+      aka: "Pin,RS,Right Side",
       description: "Opposite hitters earned that title because they are opposite to the strong (left) side hitter, meaning they hit behind the setter. In a 6-1, just like an outside hitter, an opposite has the option to play all the way around, passing, playing defense, and hitting out of the back row. An opposite’s responsibilities include swinging from the front and back row, playing right-back defense, and blocking the other team’s outside hitter."
     },
     DS: {
@@ -20,7 +20,7 @@ const positions = {
     MH: {
       key: "MH",
       name: "Middle Hitter",
-      aka: "MB, Middle Hitter, Middle",
+      aka: "MB,Middle Hitter,Middle",
       description: "Middle blockers are the team’s best blockers, and they hit mostly fast-tempo sets from the middle of the court and behind the setter. Typically the libero goes in for the middle when he or she rotates to the back row. Middle sets are some of the most difficult to set and require good passes, therefore middles often get the fewest sets but have the best hitting percentages."
     },
     S: {
