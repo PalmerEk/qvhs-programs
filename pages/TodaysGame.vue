@@ -31,34 +31,38 @@ const isHome = computed(() => {
 const opponent = computed(() => {
   return isHome.value ? game.value.visitor : game.value.home;
 });
-
 </script>
 
 <template>
-  <div>
-    <h1 class="text-5xl text-center text-accent mb-4">{{
-            new Date(game.time).toLocaleTimeString([], {
-              hour: "numeric",
-              minute: "2-digit",
-            })
-          }}
-          <div v-if="isHome">AT HOME</div>
-          <div v-else>AWAY</div>
-      </h1>
+  <div v-if="game">
+    <h1 class="text-5xl text-center text-accent mb-4">
+      {{
+        new Date(game.time).toLocaleTimeString([], {
+          hour: "numeric",
+          minute: "2-digit",
+        })
+      }}
+      <div v-if="isHome">AT HOME</div>
+      <div v-else>AWAY</div>
+    </h1>
 
-      <h2 class="text-2xl text-center mb-4">QV will take on</h2>
+    <h2 class="text-2xl text-center mb-4">QV will take on</h2>
 
-      <NuxtLink :to="`/Team/${opponent.id}`">
-        <div class="card border-2 glass p-4 m-4">
-          <figure v-if="opponent.avatar_url">
-            <img :src="opponent.avatar_url" :alt="opponent.nickname" class="rounded-xl" />
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title text-accent">{{ opponent.name }}</h2>
-            <p class="text-sm italic">{{ opponent.nickname }}</p>
-          </div>
+    <NuxtLink :to="`/Team/${opponent.id}`">
+      <div class="card border-2 glass p-4 m-4">
+        <figure v-if="opponent.avatar_url">
+          <img
+            :src="opponent.avatar_url"
+            :alt="opponent.nickname"
+            class="rounded-xl"
+          />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-accent">{{ opponent.name }}</h2>
+          <p class="text-sm italic">{{ opponent.nickname }}</p>
         </div>
-      </NuxtLink>
+      </div>
+    </NuxtLink>
   </div>
 </template>
 
