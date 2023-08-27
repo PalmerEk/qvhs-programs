@@ -12,22 +12,18 @@ const NAV_LINKS = [
     link: "/Schedule",
     img: "/VBBack_6.jpg",
   },
-
-  // {
-  //   name: "Opponents",
-  //   link: "/VisitingTeam",
-  //   img: "/VBBack_3.jpeg",
-  // },
   {
     name: "Learn More",
     description: "Games are more fun the more you know",
     link: "/LearnMore",
     img: "/VBBack_5.jpg",
   },
-  // {
-  //   name: "Concessions",
-  //   link: "/Concessions",
-  // },
+  {
+    name: "Concessions",
+    description: "You know you wanna",
+    link: "/Concessions",
+    img: "/SnacksBack.png",
+  },
   // {
   //   name: "Sound Board",
   //   link: "/SoundBoard",

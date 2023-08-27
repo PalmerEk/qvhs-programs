@@ -3,7 +3,7 @@
 
 <template>
     <div>
-        <h1>TODO: Concessions</h1>
+        <h1>TODO: Concessions Menu</h1>
     </div>
 </template>
 
