@@ -11,9 +11,11 @@ const goBack = () => {
     <header>
       <div class="navbar bg-base-100">
         <div class="flex-none">
+          <NuxtLink to="/">
           <button class="btn btn-square btn-ghost">
             <img src="/QVLogo.png" alt="QV Logo" />
           </button>
+          </NuxtLink>
         </div>
         <div class="flex-1">
           <a class="btn btn-ghost normal-case text-lg"

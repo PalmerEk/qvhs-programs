@@ -13,17 +13,24 @@ const NAV_LINKS = [
     img: "/VBBack_6.jpg",
   },
   {
+    name: "Concessions",
+    description: "You know you wanna",
+    link: "/Concessions",
+    img: "/SnacksBack.png",
+  },
+  {
     name: "Learn More",
     description: "Games are more fun the more you know",
     link: "/LearnMore",
     img: "/VBBack_5.jpg",
   },
   {
-    name: "Concessions",
-    description: "You know you wanna",
-    link: "/Concessions",
-    img: "/SnacksBack.png",
+    name: "Sponsor",
+    description: "It takes a village to raise a team",
+    link: "/Sponsors",
+    img: "/VBBack_7.png",
   },
+  
 ];
 
 const { getSchedule } = useSupabase();
@@ -37,6 +44,7 @@ const { data: schedule, pending } = useAsyncData(
   }
 );
 
+// TODO: Maybe add "Next Game" to the home page if there isn't a game today?
 const todaysOpponent = computed(() => {
   if(!schedule.value) return null;
 

@@ -12,10 +12,12 @@ const { data: schedule, pending } = useAsyncData(
 </script>
 
 <template>
-  <div>
-    <h1>Schedule</h1>
+  <div class="mx-4">
+    <h1 class="text-3xl text-center bg-accent text-black font-bold mb-4 rounded-md">
+        Schedule
+    </h1>
     <ul>
-      <li v-for="game in schedule" :key="game.time" class="border-2 mb-4">
+      <li v-for="game in schedule" :key="game.time" class="border-b-2 mb-4">
         <div class="grid grid-cols-3 gap-2 min-h-full">
           <div class="w-24 text-center">
             <span>{{ game.visitor.name }}</span>

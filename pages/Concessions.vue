@@ -72,12 +72,11 @@ const MENU = [
             <span><Icon name="fa-brands:apple-pay" size="48" /></span>
             <div class="text-sm">412-980-0812</div>
         </div>
-        <!-- <div class="col-span-1 text-center pt-4">
-            <span><Icon name="mdi:dollar" size="48" /></span>
-        </div> -->
         <div class="col-span-1 text-center">
-            <span><Icon name="simple-icons:venmo" size="48" /></span>
-            <div>@Laura-Palmer-52</div>
+            <a href="https://account.venmo.com/u/Laura-Palmer-52" target="_blank">
+                <span><Icon name="simple-icons:venmo" size="48" /><sup class="pl-1"><Icon name="mdi:open-in-new" size="14" /></sup></span>
+                <div class="text-sm">@Laura-Palmer-52</div>
+            </a>
         </div>
     </div>
     
