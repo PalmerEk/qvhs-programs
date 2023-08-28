@@ -11,8 +11,8 @@ const { data: schedule, pending } = useAsyncData(
 );
 
 const game = computed(() => {
-  // const today = new Date();
-  const today = new Date("2023-08-29T18:00:00.000Z");
+  const today = new Date();
+  // const today = new Date("2023-08-29T18:00:00.000Z");
   const todaysGame = schedule.value.find((game) => {
     const gameDate = new Date(game.time);
     return (
