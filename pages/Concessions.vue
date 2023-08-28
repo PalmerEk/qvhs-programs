@@ -70,14 +70,14 @@ const MENU = [
         </div>
         <div class="col-span-1 text-center">
             <span><Icon name="fa-brands:apple-pay" size="48" /></span>
-            <div class="text-sm">laura@palmerlaura.com</div>
+            <div class="text-sm">412-980-0812</div>
         </div>
         <!-- <div class="col-span-1 text-center pt-4">
             <span><Icon name="mdi:dollar" size="48" /></span>
         </div> -->
         <div class="col-span-1 text-center">
             <span><Icon name="simple-icons:venmo" size="48" /></span>
-            <div>412-980-0812</div>
+            <div>@Laura-Palmer-52</div>
         </div>
     </div>
     
