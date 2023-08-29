@@ -48,6 +48,12 @@
 
             <div class="border-b-2 border-accent"></div>
 
+            <div class="card card-compact bg-base-100 shadow-xl join-item p-4">
+                <figure><img src="/CorporateSponsors/LauraPalmerColdwell.jpeg" alt="Laura Palmer Coldwell Banker" /></figure>
+            </div>
+
+            <div class="border-b-2 border-accent"></div>
+
             <p class="text-sm italic py-4">Corporate sponsors play a vital role in supporting our team's activities and opportunities. If you are interested in becoming a corporate sponsor, please contact Laura Palmer 412-980-0812.</p>
 
             <div class="border-b-2 border-accent"></div>
