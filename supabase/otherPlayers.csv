@@ -121,3 +121,23 @@ team,jersey,firstName,lastName,positions,gradYear,height,varsity
 10,10,"Jordan","Sirianni","[""OH""]",2025,67,false
 10,31,"Alyssa","Spang","[""MB""]",2025,70,false
 10,1,"Josie","Ziegler","[""OH""]",2024,65,false
+3, 3, "Sienna", "Zurynski"  , [], 2027, 69, true
+3, 25, "Tessa", "Wright"  , [], 2027, 69, true
+3, 42, "Makaela", "Jordan"  , [], 2027, 69, true
+3, 22, "Kamryn", "Haskey"  , [], 2027, 69, true
+3, 32, "Stella", "Haney" , [], 2027, 69, true
+3, 2, "Charlize", "Frye"  , [], 2027, 69, true
+3, 37, "Caitlyn", "Costanza"  , [], 2027, 69, true
+3, 26, "Phoenix", "Richards"  , [], 2026, 69, true
+3, 36, "Reese", "Neely"  , [], 2026, 69, true
+3, 19, "Olivia", "Feltner"  , [], 2026, 69, true
+3, 15, "Alexis", "Cooper"  , [], 2026, 69, true
+3, 21, "Serenity", "Cooper"  , [], 2026, 69, true
+3, 41, "Seanna", "Conklin"  , [], 2026, 69, true
+3, 17, "Aubrey", "Boyd"  , [], 2026, 69, true
+3, 16, "Riley", "Beegle"  , [], 2026, 69, true
+3, 7, "Trista", "Somerville"  , [], 2025, 69, true
+3, 1, "Isabelle", "Bonzo"  , [], 2025, 69, true
+3, 35, "Annabelle", "Komlos"  , [], 2025, 69, true
+3, 33, "Jenna", "Haskey"  , [], 2024, 69, true
+3, 39, "Cassidy", "Harris"  , [], 2024, 69, true

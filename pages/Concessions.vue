@@ -20,17 +20,21 @@ const MENU = [
   {
     name: "Food",
     items: [
-      {
-        name: "Nachos w/ Cheese",
-        price: 3.0,
+    {
+        name: "Chic-Fil-A",
+        price: 5.0,
       },
       {
-        name: "Meatball Slider",
-        price: 3.0,
+        name: "Hot Dog",
+        price: 2.0,
       },
       {
         name: "Walking Taco",
         price: 4.0,
+      },
+      {
+        name: "Mixed Berries",
+        price: 3.0,
       },
     ],
   },

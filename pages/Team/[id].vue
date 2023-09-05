@@ -36,7 +36,7 @@ const team = computed(() => {
 
 function rowClicked(player) {
   // TODO: Once I have images and/or stats
-  // navigateTo(`/Player/${player.id}`);
+  navigateTo(`/Player/${player.id}`);
 }
 </script>
 

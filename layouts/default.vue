@@ -1,8 +1,14 @@
 <script setup>
 const router = useRouter();
+const rightDrawerOpen = ref(null);
 
 const goBack = () => {
   if(router.currentRoute.value.path !== "/") router.back();
+};
+
+const closeDrawer = () => {
+  console.log(rightDrawerOpen.value.checked)
+  rightDrawerOpen.value.checked = false;
 };
 </script>
 
@@ -22,19 +28,65 @@ const goBack = () => {
             >Girls Varsity Volleyball</a
           >
         </div>
-        <!-- <div class="flex-none">
-          <button class="btn btn-square btn-ghost">
-            <Icon name="mdi-dots-horizontal" size="24" />
-          </button>
-        </div> -->
+        <div class="flex-none">
+          <label for="right-drawer" class="drawer-button btn btn-square btn-link"><Icon name="mdi-dots-horizontal" size="24" /></label>
+        </div>
       </div>
     </header>
 
-    <div class="h-[calc(100vh-7rem)] overflow-auto">
-      <slot />
+    <div class="h-[calc(100vh-76px)] overflow-clip">
+      <div class="drawer drawer-end">
+            <input id="right-drawer" type="checkbox" class="drawer-toggle" ref="rightDrawerOpen"/>
+            <div class="drawer-content">
+              <slot />
+            </div> 
+            <div class="drawer-side">
+              <label for="right-drawer" class="drawer-overlay"></label>
+              <ul class="menu bg-base-200 w-2/3 h-[calc(100vh-76px)]">
+                
+                <li>
+                  <NuxtLink to="/" @click="closeDrawer">
+                      <Icon name="mdi-home-outline" size="24" />
+                      Home
+                  </NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink to="/Schedule" @click="closeDrawer">
+                      <Icon name="material-symbols:schedule-outline" size="24" />
+                      Schedule
+                  </NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink to="/Team/1" @click="closeDrawer">
+                      <Icon name="ri:team-line" size="24" />
+                      QV Roster
+                  </NuxtLink>
+                </li>
+
+                <li>
+                    <NuxtLink to="/Sponsors" @click="closeDrawer">
+                      <Icon name="octicon:sponsor-tiers-24" size="24" />
+                      Sponsors
+                  </NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink to="/LearnMore" @click="closeDrawer">
+                      <Icon name="mdi:school-outline" size="24" />
+                      Learn More
+                  </NuxtLink>
+                </li>
+                <li>
+                    <NuxtLink to="/Share" @click="closeDrawer">
+                      <Icon name="mdi:share-variant-outline" size="24" />
+                      Share
+                  </NuxtLink>
+                </li>
+              </ul>
+            </div>
+          </div>
     </div>
 
-    <footer>
+    <!-- <footer>
       <div class="btm-nav btm-nav-sm">
         <button>
           <a href="" @click.prevent="goBack()">
@@ -46,23 +98,7 @@ const goBack = () => {
             <Icon name="mdi-home-outline" size="24" />
           </NuxtLink>
         </button>
-        <!-- <button>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-            />
-          </svg>
-        </button> -->
       </div>
-    </footer>
+    </footer> -->
   </main>
 </template>

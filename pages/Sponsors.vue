@@ -54,7 +54,7 @@
 
             <div class="border-b-2 border-accent"></div>
 
-            <p class="text-sm italic py-4">Corporate sponsors play a vital role in supporting our team's activities and opportunities. If you are interested in becoming a corporate sponsor, please contact Laura Palmer 412-980-0812.</p>
+            <p class="text-sm italic py-4">Corporate sponsors play a vital role in supporting our team's activities and opportunities. If you are interested in becoming a corporate sponsor, please contact Laura Palmer via email: <a href="mailto:Laura.Palmer@PalmerLaura.com?subject=QVHS Girls Volleyball Corporate Sponsor">Laura.Palmer@PalmerLaura.com</a></p>
 
             <div class="border-b-2 border-accent"></div>
         </div>
