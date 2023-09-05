@@ -22,7 +22,7 @@ const MENU = [
     items: [
     {
         name: "Chic-Fil-A",
-        price: 5.0,
+        price: 6.0,
       },
       {
         name: "Hot Dog",
