@@ -1,17 +1,10 @@
 <script setup>
 const route = useRoute();
 
-const { getPlayer } = useSupabase();
+const { getPlayer } = useData();
 const positions = usePositions();
 
-const { data: player, pending } = useAsyncData(
-  `player:${route.params.id}`,
-  () => getPlayer(route.params.id),
-  {
-    lazy: true,
-    transform: (result) => result.data,
-  }
-);
+const player = getPlayer(route.params.id);
 
 const positionsDescriptions = computed(() => {
   return player.value.positions

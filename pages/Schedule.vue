@@ -1,14 +1,5 @@
 <script setup>
-const { getSchedule } = useSupabase();
-
-const { data: schedule, pending } = useAsyncData(
-  `schedule`,
-  () => getSchedule(),
-  {
-    lazy: true,
-    transform: (result) => result.data,
-  }
-);
+const { schedule } = useData()
 </script>
 
 <template>

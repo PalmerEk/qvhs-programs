@@ -1,44 +1,20 @@
 <script setup>
-const { getSchedule } = useSupabase();
-
-const { data: schedule, pending } = useAsyncData(
-  `schedule`,
-  () => getSchedule(),
-  {
-    lazy: true,
-    transform: (result) => result.data,
-  }
-);
-
-const game = computed(() => {
-  const today = new Date();
-  // const today = new Date("2023-08-29T18:00:00.000Z");
-  const todaysGame = schedule.value.find((game) => {
-    const gameDate = new Date(game.time);
-    return (
-      gameDate.getFullYear() === today.getFullYear() &&
-      gameDate.getMonth() === today.getMonth() &&
-      gameDate.getDate() === today.getDate()
-    );
-  });
-
-  return todaysGame ? todaysGame : null;
-});
+const { todaysGame } = useData()
 
 const isHome = computed(() => {
-  return game.value?.home?.id === 1;
+  return todaysGame.value.home.id == 1;
 });
 
 const opponent = computed(() => {
-  return isHome.value ? game.value.visitor : game.value.home;
+  return isHome.value ? todaysGame.value.visitor : todaysGame.value.home;
 });
 </script>
 
 <template>
-  <div v-if="game">
+  <div v-if="todaysGame">
     <h1 class="text-5xl text-center text-accent mb-4">
       {{
-        new Date(game.time).toLocaleTimeString([], {
+        new Date(todaysGame.time).toLocaleTimeString([], {
           hour: "numeric",
           minute: "2-digit",
         })

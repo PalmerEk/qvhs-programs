@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "name": "Quaker Valley",
+    "nickname": "Quakers",
+    "avatar_url": "https://schoolassets.s3.amazonaws.com/logos/26508/26508.png"
+  },
+  {
+    "id": 2,
+    "name": "Beaver Area HS",
+    "nickname": "Bobcats",
+    "avatar_url": "https://schoolassets.s3.amazonaws.com/logos/26189/26189.png"
+  },
+  {
+    "id": 3,
+    "name": "Freedom Area Sr HS",
+    "nickname": "Bulldogs",
+    "avatar_url": "https://schoolassets.s3.amazonaws.com/logos/1898/1898.png"
+  },
+  {
+    "id": 4,
+    "name": "Central Valley",
+    "nickname": "Warriors",
+    "avatar_url": "https://schoolassets.s3.amazonaws.com/logos/1815/1815.png"
+  },
+  {
+    "id": 5,
+    "name": "Avonworth HS",
+    "nickname": "Antelopes",
+    "avatar_url": "https://schoolassets.s3.amazonaws.com/logos/26185/26185.png"
+  },
+  {
+    "id": 6,
+    "name": "Our Lady of the Sacred Heart",
+    "nickname": "OLSH"
+  },
+  {
+    "id": 7,
+    "name": "Montour",
+    "nickname": "Montour",
+    "avatar_url": "https://schoolassets.s3.amazonaws.com/logos/26371/26371.png"
+  },
+  {
+    "id": 8,
+    "name": "New Brighton HS"
+  },
+  {
+    "id": 9,
+    "name": "Sto-Rox HS"
+  },
+  {
+    "id": 10,
+    "name": "Hopewell HS",
+    "nickname": "Vikings",
+    "avatar_url": "https://schoolassets.s3.amazonaws.com/logos/1968/1968.png"
+  }
+]

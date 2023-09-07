@@ -1,19 +1,13 @@
 <script setup>
-const router = useRouter();
 const rightDrawerOpen = ref(null);
 
-const goBack = () => {
-  if(router.currentRoute.value.path !== "/") router.back();
-};
-
 const closeDrawer = () => {
-  console.log(rightDrawerOpen.value.checked)
   rightDrawerOpen.value.checked = false;
 };
 </script>
 
 <template>
-  <main class="min-w-screen min-h-screen">
+  <main class="min-w-screen min-h-screen overflow-auto">
     <header>
       <div class="navbar bg-base-100">
         <div class="flex-none">
@@ -34,15 +28,15 @@ const closeDrawer = () => {
       </div>
     </header>
 
-    <div class="h-[calc(100vh-76px)] overflow-clip">
+    <div class="">
       <div class="drawer drawer-end">
             <input id="right-drawer" type="checkbox" class="drawer-toggle" ref="rightDrawerOpen"/>
             <div class="drawer-content">
               <slot />
             </div> 
-            <div class="drawer-side">
+            <div class="drawer-side z-10">
               <label for="right-drawer" class="drawer-overlay"></label>
-              <ul class="menu bg-base-200 w-2/3 h-[calc(100vh-76px)]">
+              <ul class="menu bg-base-200 w-2/3 h-full">
                 
                 <li>
                   <NuxtLink to="/" @click="closeDrawer">
@@ -62,7 +56,12 @@ const closeDrawer = () => {
                       QV Roster
                   </NuxtLink>
                 </li>
-
+                <li>
+                  <NuxtLink to="/Stats" @click="closeDrawer">
+                      <Icon name="ic:baseline-query-stats" size="24" />
+                      QV Stats
+                  </NuxtLink>
+                </li>
                 <li>
                     <NuxtLink to="/Sponsors" @click="closeDrawer">
                       <Icon name="octicon:sponsor-tiers-24" size="24" />

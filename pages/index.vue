@@ -27,34 +27,8 @@ const NAV_LINKS = [
   
 ];
 
-const { getSchedule } = useSupabase();
-
-const { data: schedule, pending } = useAsyncData(
-  `schedule`,
-  () => getSchedule(),
-  {
-    lazy: true,
-    transform: (result) => result.data,
-  }
-);
-
 // TODO: Maybe add "Next Game" to the home page if there isn't a game today?
-const todaysOpponent = computed(() => {
-  if(!schedule.value) return null;
-
-  const today = new Date();
-  // const today = new Date("2023-08-29T18:00:00.000Z");
-  const todaysGame = schedule.value.find((game) => {
-    const gameDate = new Date(game.time);
-    return (
-      gameDate.getFullYear() === today.getFullYear() &&
-      gameDate.getMonth() === today.getMonth() &&
-      gameDate.getDate() === today.getDate()
-    );
-  });
-
-  return todaysGame ? todaysGame : null;
-});
+const { todaysGame } = useData()
 
 </script>
 
@@ -74,7 +48,7 @@ const todaysOpponent = computed(() => {
     </div> -->
 
     <div class="join join-vertical">
-      <NuxtLink v-if="todaysOpponent" to="/TodaysGame" class="join-item">
+      <NuxtLink v-if="todaysGame" to="/TodaysGame" class="join-item">
         <div class="card border-2 glass border-accent p-4 m-4">
           <figure>
             <img src="/VBBack_4.jpg" alt="Today's game" class="rounded-xl" />

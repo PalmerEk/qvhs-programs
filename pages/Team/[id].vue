@@ -1,17 +1,11 @@
 <script setup>
 const route = useRoute();
+const { getTeam, getTeamRoster } = useData();
 
-const { headCoaches, assistantCoaches, managers } = useRoster();
-const { getTeamRoster } = useSupabase();
+// const { headCoaches, assistantCoaches, managers } = useRoster();
 
-const { data: players, pending } = useAsyncData(
-  `team:${route.params.id}`,
-  () => getTeamRoster(route.params.id),
-  {
-    lazy: true,
-    transform: (result) => result.data,
-  }
-);
+const players = getTeamRoster(route.params.id);
+const team = getTeam(players[0].team);
 
 const gradClass = (gradyear) => {
   const currentYear = new Date().getFullYear();
@@ -28,12 +22,6 @@ const gradClass = (gradyear) => {
     : "Fr.";
 };
 
-const team = computed(() => {
-  if (!players.value) return null;
-  if(!players.value.length) return null;
-  return players.value[0].team;
-});
-
 function rowClicked(player) {
   // TODO: Once I have images and/or stats
   //if(player.team_id === 1) navigateTo(`/Player/${player.id}`);
@@ -42,42 +30,40 @@ function rowClicked(player) {
 
 <template>
   <div class="overflow-x-auto overflow-y-auto">
-    <span v-if="pending" class="loading loading-spinner text-primary"></span>
-    <div v-else>
-      <h1 v-if="team" class="text-2xl text-center text-accent mb-4 h-12">
-        <div class="avatar h-12">
-          <div>
-            <img :src="team.avatar_url" :alt="team.nickname" />
-          </div>
+    <h1 v-if="team" class="text-2xl text-center text-accent mb-4 h-12">
+      <div class="avatar h-12">
+        <div>
+          <img :src="team.avatar_url" :alt="team.nickname" />
         </div>
-        <span class="align-middle">{{ team.name }}</span>
-      </h1>
-      <table class="table table-xs table-pin-rows table-pin-cols">
-        <thead>
-          <tr>
-            <th>#</th>
-            <td>Name</td>
-            <td>Position</td>
-            <td>Ht</td>
-            <td>Class</td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr
-            v-for="player in players"
-            :key="player.id"
-            @click="rowClicked(player)"
-          >
-            <th>{{ player.jersey >= 0 ? player.jersey : "" }}</th>
-            <td>{{ player.lastName }}, {{ player.firstName }}</td>
-            <td>{{ player.positions.join("/") }}</td>
-            <td>
-              {{ Math.floor(player.height / 12) }}'{{ player.height % 12 }}"
-            </td>
-            <td>{{ gradClass(player.gradYear) }}</td>
-          </tr>
-        </tbody>
-        <!-- <tfoot>
+      </div>
+      <span class="align-middle">{{ team.name }}</span>
+    </h1>
+    <table class="table table-xs table-pin-rows table-pin-cols">
+      <thead>
+        <tr>
+          <th>#</th>
+          <td>Name</td>
+          <td>Position</td>
+          <td>Ht</td>
+          <td>Class</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          v-for="player in players"
+          :key="player.id"
+          @click="rowClicked(player)"
+        >
+          <th>{{ player.jersey >= 0 ? player.jersey : "" }}</th>
+          <td>{{ player.lastName }}, {{ player.firstName }}</td>
+          <td>{{ player.positions.join("/") }}</td>
+          <td>
+            {{ Math.floor(player.height / 12) }}'{{ player.height % 12 }}"
+          </td>
+          <td>{{ gradClass(player.gradYear) }}</td>
+        </tr>
+      </tbody>
+      <!-- <tfoot>
         <tr>
           <td>Head Coach:</td>
           <td>
@@ -110,8 +96,7 @@ function rowClicked(player) {
           </td>
         </tr>
       </tfoot> -->
-      </table>
-    </div>
+    </table>
   </div>
 </template>
 
