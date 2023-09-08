@@ -1,6 +1,5 @@
 <script setup>
-const { getTeamRoster, getTeam } = useData();
-
+const { getTeamRoster, schedule } = useData();
 // get QV roster
 const team = getTeamRoster(1);
 
@@ -49,6 +48,14 @@ const overall = computed(() => {
     { kills: 0, digs: 0, assists: 0, aces: 0 }
   );
 });
+
+const getOpponent = (gameId)  => {
+
+    const game = schedule.value.find((g) => g.id == gameId);
+    if(!game) return { name: "Unknown" };
+    return game.home.id == 1 ? game.visitor : game.home;
+}
+
 </script>
 
 <template>
@@ -140,9 +147,9 @@ const overall = computed(() => {
         </tr>
       </thead>
       <tbody>
-        <tr v-for="[team, stats] in Object.entries(gameTotals())" :key="team">
-          <th>{{ team }}</th>
-          <td>{{ getTeam(team).name }}</td>
+        <tr v-for="[gameId, stats] in Object.entries(gameTotals())" :key="team">
+          <th>{{ gameId }}</th>
+          <td>{{ getOpponent(gameId).name }}</td>
           <td>{{ stats.kills.toLocaleString() }}</td>
           <td>{{ stats.digs.toLocaleString() }}</td>
           <td>{{ stats.assists.toLocaleString() }}</td>

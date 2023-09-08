@@ -11,7 +11,8 @@
     "varsity": false,
     "stats": [
       { "game": 1, "kills": 0, "digs": 1, "assists": 1, "aces": 0 },
-      { "game": 2, "kills": 0, "digs": 1, "assists": 1, "aces": 0 }
+      { "game": 2, "kills": 0, "digs": 1, "assists": 1, "aces": 0 },
+      { "game": 3, "kills": 0, "digs": 1, "assists": 1, "aces": 0 }
     ]
   },
   {
@@ -70,7 +71,8 @@
     "varsity": false,
     "stats": [
       { "game": 1, "kills": 11, "digs": 0, "assists": 0, "aces": 1 },
-      { "game": 2, "kills": 4, "digs": 4, "assists": 0, "aces": 5 }
+      { "game": 2, "kills": 4, "digs": 4, "assists": 0, "aces": 5 },
+      { "game": 3, "kills": 8, "digs": 1, "assists": 1, "aces": 1 }
     ]
   },
   {
@@ -96,7 +98,8 @@
     "varsity": false,
     "stats": [
       { "game": 1, "kills": 0, "digs": 4, "assists": 0, "aces": 0 },
-      { "game": 2, "kills": 0, "digs": 2, "assists": 0, "aces": 0 }
+      { "game": 2, "kills": 0, "digs": 2, "assists": 0, "aces": 0 },
+      { "game": 3, "kills": 0, "digs": 8, "assists": 2, "aces": 3 }
     ]
   },
   {
@@ -120,7 +123,10 @@
     "gradYear": 2026,
     "height": 68,
     "varsity": false,
-    "stats": [{ "game": 2, "kills": 4, "digs": 2, "assists": 1, "aces": 0 }]
+    "stats": [
+        { "game": 2, "kills": 4, "digs": 2, "assists": 1, "aces": 0 },
+        { "game": 3, "kills": 3, "digs": 0, "assists": 0, "aces": 0 }
+    ]
   },
   {
     "id": 7,
@@ -134,7 +140,8 @@
     "varsity": false,
     "stats": [
       { "game": 1, "kills": 3, "digs": 5, "assists": 0, "aces": 3 },
-      { "game": 2, "kills": 5, "digs": 3, "assists": 3, "aces": 3 }
+      { "game": 2, "kills": 5, "digs": 3, "assists": 3, "aces": 3 },
+      { "game": 3, "kills": 5, "digs": 5, "assists": 2, "aces": 5 }
     ]
   },
   {
@@ -175,7 +182,8 @@
     "varsity": false,
     "stats": [
       { "game": 1, "kills": 8, "digs": 12, "assists": 0, "aces": 0 },
-      { "game": 2, "kills": 4, "digs": 4, "assists": 0, "aces": 0 }
+      { "game": 2, "kills": 4, "digs": 4, "assists": 0, "aces": 0 },
+      { "game": 3, "kills": 9, "digs": 2, "assists": 1, "aces": 6 }
     ]
   },
   {
@@ -213,7 +221,8 @@
     "varsity": false,
     "stats": [
       { "game": 1, "kills": 6, "digs": 8, "assists": 0, "aces": 0 },
-      { "game": 2, "kills": 6, "digs": 4, "assists": 1, "aces": 3 }
+      { "game": 2, "kills": 6, "digs": 4, "assists": 1, "aces": 3 },
+      { "game": 3, "kills": 8, "digs": 4, "assists": 0, "aces": 0 }
     ]
   },
   {
@@ -261,7 +270,8 @@
     "varsity": false,
     "stats": [
       { "game": 1, "kills": 3, "digs": 4, "assists": 24, "aces": 1 },
-      { "game": 2, "kills": 4, "digs": 6, "assists": 16, "aces": 5 }
+      { "game": 2, "kills": 4, "digs": 6, "assists": 16, "aces": 5 },
+      { "game": 3, "kills": 3, "digs": 2, "assists": 27, "aces": 4 }
     ]
   },
   {
@@ -286,7 +296,10 @@
     "gradYear": 2025,
     "height": 67,
     "varsity": false,
-    "stats": [{ "game": 2, "kills": 1, "digs": 0, "assists": 0, "aces": 0 }]
+    "stats": [
+        { "game": 2, "kills": 1, "digs": 0, "assists": 0, "aces": 0 },
+        { "game": 3, "kills": 0, "digs": 1, "assists": 0, "aces": 1 }
+    ]
   },
   {
     "id": 1,
