@@ -4,7 +4,7 @@ const MENU = [
     name: "Drinks",
     items: [
       {
-        name: "Gatorade",
+        name: "Gatorade/Arizona Tea",
         price: 2.0,
       },
       {
@@ -21,8 +21,8 @@ const MENU = [
     name: "Food",
     items: [
     {
-        name: "Chic-Fil-A",
-        price: 6.0,
+        name: "Buffalo Chicken Dip",
+        price: 4.0,
       },
       {
         name: "Hot Dog",
@@ -46,16 +46,16 @@ const MENU = [
         price: 2.0,
       },
       {
-        name: "Cookies",
-        price: 1.0,
-      },
-      {
         name: "Chips",
         price: 1.0,
       },
       {
-        name: "Candy",
+        name: "Pickles",
         price: 1.0,
+      },
+      {
+        name: "Candy Bar",
+        price: 2.0,
       },
     ],
   },
