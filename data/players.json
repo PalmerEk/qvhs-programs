@@ -12,7 +12,8 @@
     "stats": [
       { "game": 1, "kills": 0, "digs": 1, "assists": 1, "aces": 0 },
       { "game": 2, "kills": 0, "digs": 1, "assists": 1, "aces": 0 },
-      { "game": 3, "kills": 0, "digs": 1, "assists": 1, "aces": 0 }
+      { "game": 3, "kills": 0, "digs": 1, "assists": 1, "aces": 0 },
+      { "game": 4, "kills": 0, "digs": 6, "assists": 2, "aces": 0 }
     ]
   },
   {
@@ -72,7 +73,8 @@
     "stats": [
       { "game": 1, "kills": 11, "digs": 0, "assists": 0, "aces": 1 },
       { "game": 2, "kills": 4, "digs": 4, "assists": 0, "aces": 5 },
-      { "game": 3, "kills": 8, "digs": 1, "assists": 1, "aces": 1 }
+      { "game": 3, "kills": 8, "digs": 1, "assists": 1, "aces": 1 },
+      { "game": 4, "kills": 7, "digs": 0, "assists": 0, "aces": 0 }
     ]
   },
   {
@@ -99,7 +101,8 @@
     "stats": [
       { "game": 1, "kills": 0, "digs": 4, "assists": 0, "aces": 0 },
       { "game": 2, "kills": 0, "digs": 2, "assists": 0, "aces": 0 },
-      { "game": 3, "kills": 0, "digs": 8, "assists": 2, "aces": 3 }
+      { "game": 3, "kills": 0, "digs": 8, "assists": 2, "aces": 3 },
+      { "game": 4, "kills": 0, "digs": 3, "assists": 2, "aces": 2 }
     ]
   },
   {
@@ -124,8 +127,9 @@
     "height": 68,
     "varsity": false,
     "stats": [
-        { "game": 2, "kills": 4, "digs": 2, "assists": 1, "aces": 0 },
-        { "game": 3, "kills": 3, "digs": 0, "assists": 0, "aces": 0 }
+      { "game": 2, "kills": 4, "digs": 2, "assists": 1, "aces": 0 },
+      { "game": 3, "kills": 3, "digs": 0, "assists": 0, "aces": 0 },
+      { "game": 4, "kills": 1, "digs": 0, "assists": 0, "aces": 0 }
     ]
   },
   {
@@ -141,7 +145,8 @@
     "stats": [
       { "game": 1, "kills": 3, "digs": 5, "assists": 0, "aces": 3 },
       { "game": 2, "kills": 5, "digs": 3, "assists": 3, "aces": 3 },
-      { "game": 3, "kills": 5, "digs": 5, "assists": 2, "aces": 5 }
+      { "game": 3, "kills": 5, "digs": 5, "assists": 2, "aces": 5 },
+      { "game": 4, "kills": 6, "digs": 7, "assists": 1, "aces": 4 }
     ]
   },
   {
@@ -183,7 +188,8 @@
     "stats": [
       { "game": 1, "kills": 8, "digs": 12, "assists": 0, "aces": 0 },
       { "game": 2, "kills": 4, "digs": 4, "assists": 0, "aces": 0 },
-      { "game": 3, "kills": 9, "digs": 2, "assists": 1, "aces": 6 }
+      { "game": 3, "kills": 9, "digs": 2, "assists": 1, "aces": 6 },
+      { "game": 4, "kills": 13, "digs": 8, "assists": 1, "aces": 1 }
     ]
   },
   {
@@ -222,7 +228,8 @@
     "stats": [
       { "game": 1, "kills": 6, "digs": 8, "assists": 0, "aces": 0 },
       { "game": 2, "kills": 6, "digs": 4, "assists": 1, "aces": 3 },
-      { "game": 3, "kills": 8, "digs": 4, "assists": 0, "aces": 0 }
+      { "game": 3, "kills": 8, "digs": 4, "assists": 0, "aces": 0 },
+      { "game": 4, "kills": 8, "digs": 7, "assists": 0, "aces": 2 }
     ]
   },
   {
@@ -271,7 +278,8 @@
     "stats": [
       { "game": 1, "kills": 3, "digs": 4, "assists": 24, "aces": 1 },
       { "game": 2, "kills": 4, "digs": 6, "assists": 16, "aces": 5 },
-      { "game": 3, "kills": 3, "digs": 2, "assists": 27, "aces": 4 }
+      { "game": 3, "kills": 3, "digs": 2, "assists": 27, "aces": 4 },
+      { "game": 4, "kills": 1, "digs": 6, "assists": 26, "aces": 2 }
     ]
   },
   {
@@ -297,8 +305,8 @@
     "height": 67,
     "varsity": false,
     "stats": [
-        { "game": 2, "kills": 1, "digs": 0, "assists": 0, "aces": 0 },
-        { "game": 3, "kills": 0, "digs": 1, "assists": 0, "aces": 1 }
+      { "game": 2, "kills": 1, "digs": 0, "assists": 0, "aces": 0 },
+      { "game": 3, "kills": 0, "digs": 1, "assists": 0, "aces": 1 }
     ]
   },
   {
@@ -1908,5 +1916,225 @@
     "gradYear": 2024,
     "height": 65,
     "varsity": false
+  },
+  {
+    "id": 152,
+    "team": 6,
+    "jersey": 1,
+    "firstName": "Lola",
+    "lastName": "Garner",
+    "gradYear": 2026,
+    "height": 66,
+    "positions": ["OH", "MH"]
+  },
+  {
+    "id": 153,
+    "team": 6,
+    "jersey": 3,
+    "firstName": "Rylee",
+    "lastName": "Bush",
+    "gradYear": 2024,
+    "height": 63,
+    "positions": ["OH"]
+  },
+  {
+    "id": 154,
+    "team": 6,
+    "jersey": 4,
+    "firstName": "Malley",
+    "lastName": "Woynar",
+    "gradYear": 2027,
+    "height": 70,
+    "positions": ["MH"]
+  },
+  {
+    "id": 155,
+    "team": 6,
+    "jersey": 6,
+    "firstName": "Riley",
+    "lastName": "Polidora",
+    "gradYear": 2025,
+    "height": 63,
+    "positions": ["DS"]
+  },
+  {
+    "id": 156,
+    "team": 6,
+    "jersey": 7,
+    "firstName": "Julia",
+    "lastName": "Davoli",
+    "gradYear": 2026,
+    "height": 64,
+    "positions": ["OH"]
+  },
+  {
+    "id": 157,
+    "team": 6,
+    "jersey": 8,
+    "firstName": "Taylor",
+    "lastName": "Phillips",
+    "gradYear": 2025,
+    "height": 61,
+    "positions": ["S"]
+  },
+  {
+    "id": 158,
+    "team": 6,
+    "jersey": 10,
+    "firstName": "Karstyn",
+    "lastName": "Soulidis",
+    "gradYear": 2027,
+    "height": 66,
+    "positions": ["OH"]
+  },
+  {
+    "id": 159,
+    "team": 6,
+    "jersey": 11,
+    "firstName": "Julia",
+    "lastName": "Mosur",
+    "gradYear": 2024,
+    "height": 63,
+    "positions": ["OH"]
+  },
+  {
+    "id": 160,
+    "team": 6,
+    "jersey": 12,
+    "firstName": "McKinley",
+    "lastName": "Walsh",
+    "gradYear": 2024,
+    "height": 65,
+    "positions": ["MH"]
+  },
+  {
+    "id": 161,
+    "team": 6,
+    "jersey": 13,
+    "firstName": "Anntonella",
+    "lastName": "Sueiras",
+    "gradYear": 2027,
+    "height": 59,
+    "positions": ["DS"]
+  },
+  {
+    "id": 162,
+    "team": 6,
+    "jersey": 14,
+    "firstName": "Leah",
+    "lastName": "Parker",
+    "gradYear": 2026,
+    "height": 65,
+    "positions": ["OH", "OPP"]
+  },
+  {
+    "id": 163,
+    "team": 6,
+    "jersey": 15,
+    "firstName": "Mira",
+    "lastName": "Mosca",
+    "gradYear": 2027,
+    "height": 66,
+    "positions": ["OH"]
+  },
+  {
+    "id": 164,
+    "team": 6,
+    "jersey": 16,
+    "firstName": "Alexa",
+    "lastName": "Murphy",
+    "gradYear": 2025,
+    "height": 66,
+    "positions": ["OPP"]
+  },
+  {
+    "id": 165,
+    "team": 6,
+    "jersey": 18,
+    "firstName": "Carmella",
+    "lastName": "Rippole",
+    "gradYear": 2027,
+    "height": 66,
+    "positions": ["OH"]
+  },
+  {
+    "id": 166,
+    "team": 6,
+    "jersey": 20,
+    "firstName": "Izabella",
+    "lastName": "Coladonato",
+    "gradYear": 2027,
+    "height": 67,
+    "positions": ["OPP"]
+  },
+  {
+    "id": 167,
+    "team": 6,
+    "jersey": 21,
+    "firstName": "Jenna",
+    "lastName": "Nastal",
+    "gradYear": 2026,
+    "height": 66,
+    "positions": ["OH"]
+  },
+  {
+    "id": 168,
+    "team": 6,
+    "jersey": 22,
+    "firstName": "Emily",
+    "lastName": "Scheller-Gallagher",
+    "gradYear": 2025,
+    "height": 62,
+    "positions": ["DS"]
+  },
+  {
+    "id": 169,
+    "team": 6,
+    "jersey": 23,
+    "firstName": "Sofia",
+    "lastName": "Davoli",
+    "gradYear": 2024,
+    "height": 69,
+    "positions": ["MH"]
+  },
+  {
+    "id": 170,
+    "team": 6,
+    "jersey": 24,
+    "firstName": "Morgan",
+    "lastName": "O’Brien",
+    "gradYear": 2024,
+    "height": 66,
+    "positions": ["S"]
+  },
+  {
+    "id": 171,
+    "team": 6,
+    "jersey": 26,
+    "firstName": "Jordyn",
+    "lastName": "Velmire",
+    "gradYear": 2026,
+    "height": 65,
+    "positions": ["S"]
+  },
+  {
+    "id": 172,
+    "team": 6,
+    "jersey": 27,
+    "firstName": "Donna",
+    "lastName": "Gurczynski",
+    "gradYear": 2025,
+    "height": 69,
+    "positions": ["MH"]
+  },
+  {
+    "id": 173,
+    "team": 6,
+    "jersey": 28,
+    "firstName": "Frankie",
+    "lastName": "Schlatterer",
+    "gradYear": 2027,
+    "height": 70,
+    "positions": ["MH"]
   }
 ]
