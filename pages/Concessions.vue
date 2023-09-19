@@ -32,10 +32,6 @@ const MENU = [
         name: "Walking Taco",
         price: 4.0,
       },
-      {
-        name: "Mixed Berries",
-        price: 3.0,
-      },
     ],
   },
   {
