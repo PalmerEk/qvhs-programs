@@ -15,7 +15,8 @@
       { "game": 3, "kills": 0, "digs": 1, "assists": 1, "aces": 0 },
       { "game": 4, "kills": 0, "digs": 6, "assists": 2, "aces": 0 },
       { "game": 5, "kills": 0, "digs": 6, "assists": 0, "aces": 0 },
-      { "game": 6, "kills": 1, "digs": 6, "assists": 1, "aces": 0 }
+      { "game": 6, "kills": 1, "digs": 6, "assists": 1, "aces": 0 },
+      { "game": 7, "kills": 0, "digs": 6, "assists": 2, "aces": 0 }
     ]
   },
   {
@@ -78,7 +79,8 @@
       { "game": 3, "kills": 8, "digs": 1, "assists": 1, "aces": 1 },
       { "game": 4, "kills": 7, "digs": 0, "assists": 0, "aces": 0 },
       { "game": 5, "kills": 8, "digs": 0, "assists": 0, "aces": 1 },
-      { "game": 6, "kills": 9, "digs": 1, "assists": 0, "aces": 1 }
+      { "game": 6, "kills": 9, "digs": 1, "assists": 0, "aces": 1 },
+      { "game": 7, "kills": 7, "digs": 1, "assists": 0, "aces": 3 }
     ]
   },
   {
@@ -108,7 +110,8 @@
       { "game": 3, "kills": 0, "digs": 8, "assists": 2, "aces": 3 },
       { "game": 4, "kills": 0, "digs": 3, "assists": 2, "aces": 2 },
       { "game": 5, "kills": 0, "digs": 4, "assists": 0, "aces": 0 },
-      { "game": 6, "kills": 0, "digs": 8, "assists": 1, "aces": 1 }
+      { "game": 6, "kills": 0, "digs": 8, "assists": 1, "aces": 1 },
+      { "game": 7, "kills": 0, "digs": 5, "assists": 0, "aces": 3 }
     ]
   },
   {
@@ -137,7 +140,8 @@
       { "game": 3, "kills": 3, "digs": 0, "assists": 0, "aces": 0 },
       { "game": 4, "kills": 1, "digs": 0, "assists": 0, "aces": 0 },
       { "game": 5, "kills": 0, "digs": 0, "assists": 1, "aces": 0 },
-      { "game": 6, "kills": 1, "digs": 0, "assists": 0, "aces": 0 }
+      { "game": 6, "kills": 1, "digs": 0, "assists": 0, "aces": 0 },
+      { "game": 7, "kills": 2, "digs": 3, "assists": 0, "aces": 0 }
     ]
   },
   {
@@ -183,7 +187,8 @@
     "stats": [
       { "game": 1, "kills": 1, "digs": 0, "assists": 0, "aces": 0 },
       { "game": 2, "kills": 1, "digs": 0, "assists": 0, "aces": 0 },
-      { "game": 6, "kills": 0, "digs": 1, "assists": 0, "aces": 0 }
+      { "game": 6, "kills": 0, "digs": 1, "assists": 0, "aces": 0 },
+      { "game": 7, "kills": 0, "digs": 0, "assists": 2, "aces": 0 }
     ]
   },
   {
@@ -202,7 +207,8 @@
       { "game": 3, "kills": 9, "digs": 2, "assists": 1, "aces": 6 },
       { "game": 4, "kills": 13, "digs": 8, "assists": 1, "aces": 1 },
       { "game": 5, "kills": 12, "digs": 8, "assists": 0, "aces": 4 },
-      { "game": 6, "kills": 18, "digs": 6, "assists": 1, "aces": 1 }
+      { "game": 6, "kills": 18, "digs": 6, "assists": 1, "aces": 1 },
+      { "game": 7, "kills": 12, "digs": 7, "assists": 2, "aces": 2 }
     ]
   },
   {
@@ -226,7 +232,10 @@
     "gradYear": 2025,
     "height": 67,
     "varsity": false,
-    "stats": [{ "game": 2, "kills": 0, "digs": 1, "assists": 2, "aces": 1 }]
+    "stats": [
+      { "game": 2, "kills": 0, "digs": 1, "assists": 2, "aces": 1 },
+      { "game": 7, "kills": 0, "digs": 1, "assists": 0, "aces": 0 }
+    ]
   },
   {
     "id": 8,
@@ -244,7 +253,8 @@
       { "game": 3, "kills": 8, "digs": 4, "assists": 0, "aces": 0 },
       { "game": 4, "kills": 8, "digs": 7, "assists": 0, "aces": 2 },
       { "game": 5, "kills": 7, "digs": 10, "assists": 0, "aces": 1 },
-      { "game": 6, "kills": 12, "digs": 8, "assists": 0, "aces": 2 }
+      { "game": 6, "kills": 12, "digs": 8, "assists": 0, "aces": 2 },
+      { "game": 7, "kills": 7, "digs": 9, "assists": 0, "aces": 6 }
     ]
   },
   {
@@ -296,7 +306,8 @@
       { "game": 3, "kills": 3, "digs": 2, "assists": 27, "aces": 4 },
       { "game": 4, "kills": 1, "digs": 6, "assists": 26, "aces": 2 },
       { "game": 5, "kills": 1, "digs": 11, "assists": 30, "aces": 0 },
-      { "game": 6, "kills": 6, "digs": 9, "assists": 38, "aces": 2 }
+      { "game": 6, "kills": 6, "digs": 9, "assists": 38, "aces": 2 },
+      { "game": 7, "kills": 3, "digs": 6, "assists": 27, "aces": 6 }
     ]
   },
   {
@@ -309,7 +320,10 @@
     "gradYear": 2024,
     "height": 65,
     "varsity": false,
-    "stats": [{ "game": 2, "kills": 1, "digs": 0, "assists": 0, "aces": 0 }]
+    "stats": [
+      { "game": 2, "kills": 1, "digs": 0, "assists": 0, "aces": 0 },
+      { "game": 7, "kills": 2, "digs": 0, "assists": 0, "aces": 0 }
+    ]
   },
   {
     "id": 16,
