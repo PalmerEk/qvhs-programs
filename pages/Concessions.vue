@@ -29,8 +29,12 @@ const MENU = [
         price: 2.0,
       },
       {
-        name: "Walking Taco",
+        name: "Loaded Nachos",
         price: 4.0,
+      },
+      {
+        name: "Nachos w/ Cheese",
+        price: 3.0,
       },
     ],
   },
